@@ -362,7 +362,7 @@ body {
 @media (max-width: 567px) {
   /* first layer */
   .top {
-  padding: 20px
+    padding: 2%;
   }
   .top .headerMenu p {
     font-size: 0.8em;
