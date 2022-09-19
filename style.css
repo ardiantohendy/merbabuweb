@@ -12,6 +12,41 @@ body {
   padding: 40px;
   width: 100%;
   height: 100vh;
+  position: relative;
+}
+
+.topMenu {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 40%;
+  top: -100%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  transition: 0.5s;
+}
+
+.topMenu a {
+  width: 100%;
+  display: inline-block;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.3em;
+  background: #000;
+  transition: 0.5s;
+}
+
+.topMenu a:hover {
+  background: #fff;
+  color: #000;
 }
 
 .landingMenu {
@@ -25,6 +60,10 @@ body {
 }
 
 .headerMenu {
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
   padding-left: 2%;
   padding-right: 5%;
   font-weight: 500;
@@ -33,10 +72,13 @@ body {
   display: flex;
   justify-content: space-between;
   font-size: 1.5em;
+  position: absolute;
 }
 
 .headerMenu img {
   filter: brightness(0) invert(1);
+  cursor: pointer;
+  z-index: 10;
 }
 
 .titleTxt {
@@ -361,9 +403,7 @@ body {
 
 @media (max-width: 567px) {
   /* first layer */
-  .top {
-    padding: 2%;
-  }
+
   .top .headerMenu p {
     font-size: 0.8em;
   }
